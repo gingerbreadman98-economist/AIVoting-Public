@@ -1,0 +1,17 @@
+evaluator_a,evaluator_b,pearson_correlation
+meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,1.0
+meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_02,0.8683606777164188
+meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_03,0.9562862078574678
+meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_04,0.9062998000983434
+meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_01,0.8683606777164188
+meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,1.0
+meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_03,0.8747137908035039
+meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_04,0.9094317396776921
+meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_01,0.9562862078574678
+meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_02,0.8747137908035039
+meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,1.0
+meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_04,0.9235440033976076
+meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_01,0.9062998000983434
+meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_02,0.9094317396776921
+meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_03,0.9235440033976076
+meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,1.0

@@ -1,0 +1,5 @@
+evaluator,evaluator_id,evaluator_model,max_allocation,mean_allocation,min_allocation,n,std_allocation
+normal_01,google/gemma-3-12b-it::normal_01,google/gemma-3-12b-it,1.0,0.24810795454545456,-0.125,400,0.4067436533250844
+normal_02,google/gemma-3-12b-it::normal_02,google/gemma-3-12b-it,1.0,0.24439366883116884,-0.4,400,0.39939947563643746
+normal_03,google/gemma-3-12b-it::normal_03,google/gemma-3-12b-it,1.0,0.24866666666666667,-0.16666666666666669,400,0.41309449536358356
+normal_04,google/gemma-3-12b-it::normal_04,google/gemma-3-12b-it,1.0,0.24539366883116884,-0.4,400,0.41621982304644317

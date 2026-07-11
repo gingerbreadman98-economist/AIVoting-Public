@@ -1,0 +1,2 @@
+attempted_ballots,clean_ballots,clean_rate_attempted,evaluator_model,failed_ballots,failure_rate_attempted,parsed_ballots,parsed_candidate_rows,repaired_ballots,repaired_rate_attempted
+400,389,0.9725,google/gemma-3-12b-it,0,0.0,400,1600,11,0.0275

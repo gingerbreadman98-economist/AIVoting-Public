@@ -1,0 +1,5 @@
+evaluator,attempted_ballots,parsed_ballots,natively_valid_rate,one_hot_rate,help_rate,neutral_rate,hurt_rate
+Qwen2.5-7B_fixed_field,400,400,0.605,0.095,0.331,0.219,0.449
+Llama3.1-8B,400,387,0.140,0.078,0.340,0.225,0.435
+Gemma3-12B,400,400,0.973,0.818,0.340,0.647,0.013
+

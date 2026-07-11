@@ -1,0 +1,17 @@
+evaluator_a,evaluator_b,pearson_correlation
+google/gemma-3-12b-it::normal_01,google/gemma-3-12b-it::normal_01,1.0
+google/gemma-3-12b-it::normal_01,google/gemma-3-12b-it::normal_02,0.7870771384459305
+google/gemma-3-12b-it::normal_01,google/gemma-3-12b-it::normal_03,0.8200915800482247
+google/gemma-3-12b-it::normal_01,google/gemma-3-12b-it::normal_04,0.8107309836437565
+google/gemma-3-12b-it::normal_02,google/gemma-3-12b-it::normal_01,0.7870771384459305
+google/gemma-3-12b-it::normal_02,google/gemma-3-12b-it::normal_02,1.0
+google/gemma-3-12b-it::normal_02,google/gemma-3-12b-it::normal_03,0.8275136054775005
+google/gemma-3-12b-it::normal_02,google/gemma-3-12b-it::normal_04,0.8191733876203224
+google/gemma-3-12b-it::normal_03,google/gemma-3-12b-it::normal_01,0.8200915800482247
+google/gemma-3-12b-it::normal_03,google/gemma-3-12b-it::normal_02,0.8275136054775005
+google/gemma-3-12b-it::normal_03,google/gemma-3-12b-it::normal_03,1.0
+google/gemma-3-12b-it::normal_03,google/gemma-3-12b-it::normal_04,0.8473596732814391
+google/gemma-3-12b-it::normal_04,google/gemma-3-12b-it::normal_01,0.8107309836437565
+google/gemma-3-12b-it::normal_04,google/gemma-3-12b-it::normal_02,0.8191733876203224
+google/gemma-3-12b-it::normal_04,google/gemma-3-12b-it::normal_03,0.8473596732814391
+google/gemma-3-12b-it::normal_04,google/gemma-3-12b-it::normal_04,1.0

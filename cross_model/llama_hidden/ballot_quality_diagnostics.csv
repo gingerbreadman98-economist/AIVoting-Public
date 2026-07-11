@@ -1,0 +1,2 @@
+attempted_ballots,clean_ballots,clean_rate_attempted,evaluator_model,failed_ballots,failure_rate_attempted,parsed_ballots,parsed_candidate_rows,repaired_ballots,repaired_rate_attempted
+400,264,0.66,meta-llama/Llama-3.1-8B-Instruct,135,0.3375,265,1060,1,0.0025

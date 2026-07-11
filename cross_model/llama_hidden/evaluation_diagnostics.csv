@@ -1,0 +1,5 @@
+evaluator,evaluator_id,evaluator_model,max_allocation,mean_allocation,min_allocation,n,std_allocation
+normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,0.5,0.0705223880597015,-0.3,268,0.2730197813255019
+normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,0.5,0.06209677419354839,-0.3,248,0.274294897877627
+normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,0.5,0.06230158730158731,-0.3,252,0.27362015343173157
+normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,1.0,0.06609589041095891,-0.3,292,0.27787453790275274

@@ -1,0 +1,5 @@
+candidate,generation_count,selection_count,tie_inclusion_count
+A,100,289,290
+B,100,0,0
+C,100,1,2
+D,100,0,0

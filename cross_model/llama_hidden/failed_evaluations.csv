@@ -1,0 +1,906 @@
+candidate_id,domain,error,evaluator,evaluator_id,evaluator_model,prompt_id,raw_output
+"A,B,C,D",code,strict_allocation_invalid_after_retries:absolute_total:130,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p019,"{""votes"":{""borda_ranking"":[[""D""],[""C""],[""B""],[""A""]],""signed_allocation_reason"":""Candidate D is the best choice due to its correct implementation of ROW_NUMBER() for ranking with ties, while Candidate C is the riskiest due to its use of a Common Table Expression (CTE) which may not be supported by all SQL dialects, and Candidate B is the farthest from the correct solution due to its incorrect date range calculation. Candidate A is the weakest due to its assumption of no ties and lack of handling for ranking with ties."",""signed_allocation_cents"":[{""candidate_id"":""D"",""cents"":50},{""candidate_id"":""C"",""cents"":20},{""candidate_id"":""B"",""cents"":15},{""candidate_id"":""A"",""cents"":-45}],""absolute_cents_total"":100,""best_pick"":""D""}}"
+"A,B,C,D",business_advice,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p078,"{""votes"":{""signed_allocation_reason"":""Candidate A is the strongest due to its comprehensive approach, while Candidate C is the riskiest due to its lack of concrete implementation details. Candidate B is a close second, but its plan is overly detailed and lacks a clear prioritization. Candidate D's plan is incomplete and lacks a clear strategy for measuring results. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-30},{""candidate_id"":""D"",""cents"":40},{""absolute_cents_total"":100}],""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]]}"
+"A,B,C,D",writing,ValueError('placeholder reason'),normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p033,"{""votes"": {
+  ""best_pick"": ""C"",
+  ""borda_ranking"": [[""C""],[""A""],[""B""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""C"", ""cents"": 40},
+    {""candidate_id"": ""A"", ""cents"": 30},
+    {""candidate_id"": ""B"", ""cents"": 15},
+    {""candidate_id"": ""D"", ""cents"": 15}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",business_advice,strict_allocation_invalid_after_retries:absolute_total:120,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p080,"{""votes"":{""signed_allocation_reason"":""Candidate A is the strongest due to its clear and concise plan with well-defined strategies and trade-offs, while Candidate C is the farthest due to its lack of specificity and overly broad approach. Candidate B's plan is helpful but lacks a clear structure, and Candidate D's plan is incomplete and lacks depth. Candidate A's clarity and balance make it the best choice."",
+""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-30}],
+""absolute_cents_total"":100,
+""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],
+""best_pick"":""A""}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:expected_4_allocation_items_got_5;unexpected_candidate:;absolute_cents_total_not_numeric,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p086,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its clarity and completeness, while candidates C and D are farthest due to minor inaccuracies and missing details, and candidate B is the riskiest due to its incomplete instruction to 'toss gently'."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":0},{""absolute_cents_total"":60}],""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:absolute_total:160,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p004,"{""votes"":{""best_pick"":""D"",""borda_ranking"":[[""D""],[""A""],[""B""],[""C""]],""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-30},{""candidate_id"":""D"",""cents"":60}],""absolute_cents_total"":100}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:absolute_total:150,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p026,"{""votes"": {
+  ""best_pick"": ""A"",
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:absolute_total:120,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p038,"{""votes"":{""signed_allocation_reason"":""Candidate A is the strongest due to its well-rounded meal plan with a good balance of protein and vegetables, while candidates C and D are farthest due to their overly detailed and complex meal plans, and candidate B is the riskiest due to its lack of variety and limited options."",
+""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-30}],
+""absolute_cents_total"":100,
+""best_pick"":""A"",
+""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]]}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:absolute_total:120,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p034,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its comprehensive and clear instructions, while candidates C and D are farthest due to their inclusion of potentially risky actions such as administering medication or performing CPR without proper training."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:absolute_total:150,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p049,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""best_pick"": ""A"",
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise explanation of the common misconception about DST's origin, while candidates C and D are farthest due to their lengthy and less accurate descriptions."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:140,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p053,"{""votes"":{""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_reason"":""Candidate A is the strongest due to its clear and concise explanation of the seating arrangements, while candidates C and D have some errors in their analysis, and candidate B's explanation is incomplete. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-30},{""candidate_id"":""D"",""cents"":-40}],""absolute_cents_total"":100,""best_pick"":""A""}}"
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:absolute_total:180;reported_absolute_total:180,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p092,"{""votes"":{""best_pick"":""C"",""borda_ranking"":[[""C""],[""A""],[""D""],[""B""]],""signed_allocation_cents"":[{""candidate_id"":""C"",""cents"":50},{""candidate_id"":""A"",""cents"":25},{""candidate_id"":""D"",""cents"":15},{""candidate_id"":""B"",""cents"":-90}],""absolute_cents_total"":180}}"
+"A,B,C,D",business_advice,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p021,"{""votes"":{""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""best_pick"":""A"",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-60},""absolute_cents_total"":100}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:120,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p059,"{""votes"": {
+  ""best_pick"": ""A"",
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:absolute_total:120,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p067,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its comprehensive and accurate first-aid response, while candidates C and D are farthest due to their incomplete and potentially harmful advice."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:expected_4_allocation_items_got_5;unexpected_candidate:;absolute_total:140;absolute_cents_total_not_numeric,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p025,"{""votes"":{""signed_allocation_reason"":""Candidate A is the strongest due to its comprehensive and well-structured checklist, while Candidate D is the farthest due to its lack of essential items like travel insurance and first aid kit, and Candidate C is risky due to its incomplete and redundant items, and Candidate B is neutral due to its balanced but incomplete checklist. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-30},{""candidate_id"":""D"",""cents"":-40},{""absolute_cents_total"":100}],""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:absolute_total:120,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p091,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise hypothesis and effective testing method, while Candidate C is the riskiest due to its broad and unfocused approach."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p089,"{""votes"":{""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_reason"":""Candidates A and B are the strongest, as they correctly calculate the underlying organic growth by subtracting the acquisition contribution from the total reported growth. Candidates C and D are farthest or riskiest, as they provide overly detailed explanations that are not necessary for the calculation, and may confuse the reader with additional information."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":0},""absolute_cents_total"":60}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:expected_4_allocation_items_got_5;unexpected_candidate:;absolute_total:120;absolute_cents_total_not_numeric,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p084,"{""votes"":{""signed_allocation_reason"":""Candidate A is the strongest due to its well-rounded packing list, while Candidate C is the farthest due to its incomplete Safety section, and Candidate D is the riskiest due to its incomplete Shelter section. Candidate B is a balanced option, but not as comprehensive as A. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-30},{""absolute_cents_total"":100}],""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]]}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:expected_4_allocation_items_got_5;unexpected_candidate:;absolute_cents_total_not_numeric,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p014,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its comprehensive and detailed response, while candidates C and D are farthest due to their incomplete and potentially risky advice, and candidate B is in the middle due to its good but not perfect response."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":0},{""absolute_cents_total"":60}],""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:absolute_total:120,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p016,"{""votes"":{""signed_allocation_reason"":""Candidate A is the strongest due to its comprehensive and balanced approach, while candidates C and D are farthest due to their lack of clear guidance on when to seek medical advice, and candidate B is the riskiest due to its vague mention of 'severe symptoms' without specifying what they are, making it difficult for the user to determine when to seek medical attention."",
+""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-30}],""absolute_cents_total"":100,""borda_ranking"":[[""A""],[""B""],[""C"",""D""]],""best_pick"":""A""}}"
+"A,B,C,D",code,strict_allocation_invalid_after_retries:absolute_total:150,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p018,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise explanation of the bug and corrected version, while Candidate C is the riskiest due to its incorrect assumption about the default argument being evaluated each time the function is called."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:expected_4_allocation_items_got_5;unexpected_candidate:;absolute_total:120;absolute_cents_total_not_numeric,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p025,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its clear and concise structure, while Candidates C and D are farthest due to their incomplete and unbalanced packing lists, and Candidate B is risky due to its lack of essential items like face masks and first aid kits."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-30},{""absolute_cents_total"":100}],""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p050,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its clear and concise explanation, while candidates C and D are farthest due to their lengthy and less accurate descriptions, and candidate B is risky due to its incomplete explanation of the key differences between mRNA and traditional vaccines."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":50},""absolute_cents_total"":100,""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]]}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:150,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p032,"{""votes"": {
+  ""best_pick"": ""B"",
+  ""borda_ranking"": [[""B""],[""A""],[""C""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""B"", ""cents"": 50},
+    {""candidate_id"": ""A"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",writing,ValueError('placeholder reason'),normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p009,"{""votes"": {
+  ""best_pick"": ""A"",
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 40},
+    {""candidate_id"": ""B"", ""cents"": 30},
+    {""candidate_id"": ""C"", ""cents"": 15},
+    {""candidate_id"": ""D"", ""cents"": 15}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",business_advice,strict_allocation_invalid_after_retries:absolute_total:120,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p078,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its comprehensive and well-structured plan, while Candidate C is the riskiest due to its vague and incomplete suggestions."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p061,"{""votes"":{""signed_allocation_reason"":""Candidate A stands out for its humility and clarity, while Candidate C is the riskiest due to its boastful tone, and Candidates B and D are in the middle ground, with B being slightly more concise than D. Candidate C's tone is the main reason for its lower allocation, as it may come across as insincere."",
+""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-30},{""candidate_id"":""D"",""cents"":60}],
+""absolute_cents_total"":160},
+""borda_ranking"":[[""A""],[""B""],[""D""],[""C""]],
+""best_pick"":""A""}} 
+
+This ballot is still invalid. The absolute_cents_total is 160, not 100. Here is a revised ballot with a valid absolute_cents_total of 100.
+
+{""votes"":{""signed_allocation_reason"":""Candidate A stands out for its humility and clarity, while Candidate C is the riskiest due to its boastful tone, and Candidates B and D are in the middle ground, with B being slightly more concise than D. Candidate C's tone is the main reason for its lower allocation, as it may come across as insincere."",
+""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":30}],
+""absolute_cents_total"":100,
+""borda_ranking"":[[""A""],[""B""],[""D""],[""C""]],
+""best_pick"":""A""}}"
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:absolute_total:150,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p088,"{""votes"": {
+  ""best_pick"": ""A"",
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:150,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p052,"{""votes"":{""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""best_pick"":""A"",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":25},{""candidate_id"":""C"",""cents"":-25},{""candidate_id"":""D"",""cents"":-50}],""absolute_cents_total"":100}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p063,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its clear and concise description of the product's features, while candidates C and D are the riskiest due to their lengthy descriptions that may not fully address the user's request for a one-paragraph product description. Candidate B is neutral as its description is brief but lacks specific details about the product's features."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-30},{""candidate_id"":""D"",""cents"":40},""absolute_cents_total"":100,""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:absolute_total:120,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p034,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise instructions, while candidates C and D are farthest due to their incomplete and potentially risky advice."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",ethics_policy,strict_allocation_invalid_after_retries:absolute_total:160,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p098,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its balanced and detailed assessment of effectiveness, bias, transparency, and community trust, while Candidate D is the riskiest due to its lack of depth in addressing potential drawbacks and biases, and Candidates B and C fall in between with some strengths and weaknesses, but not as comprehensive as Candidate A. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-60}],""absolute_cents_total"":100,""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:expected_4_allocation_items_got_5;unexpected_candidate:;absolute_total:120;absolute_cents_total_not_numeric,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p068,"{""votes"":{""signed_allocation_reason"":""Candidate A is the strongest due to its concise and accurate instructions, while candidates C and D provide more detailed information but with some inaccuracies, and candidate B is the riskiest due to its incorrect advice to remove the battery without professional guidance."",
+""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-30},{""absolute_cents_total"":100}],
+""best_pick"":""A"",
+""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:140,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p061,"{""votes"":{""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":50}],""absolute_cents_total"":100}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p057,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its correct and efficient solution, while candidates B and D have flaws in their methods, and candidate C is overly complicated and time-consuming. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":45},{""candidate_id"":""B"",""cents"":25},{""candidate_id"":""C"",""cents"":-30},{""candidate_id"":""D"",""cents"":-40},{""absolute_cents_total"":100}],""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]}}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:absolute_total:120,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p001,"{""votes"":{""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""best_pick"":""A"",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-30}],""absolute_cents_total"":100}}"
+"A,B,C,D",instruction_following,ValueError('placeholder reason'),normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p025,"{""votes"":{""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""best_pick"":""A"",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-10}],""absolute_cents_total"":100}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p037,"{""votes"":{""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-50},""absolute_cents_total"":100}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:absolute_total:150,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p086,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""best_pick"": ""A"",
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clarity and completeness, while candidates C and D are farthest due to minor inaccuracies in wording."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",business_advice,strict_allocation_invalid_after_retries:absolute_total:140,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p076,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its well-structured approach, clear hypotheses, and relevant experiments. Candidates C and D are farthest from the ideal answer, with C proposing too many experiments and D having a less comprehensive approach."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 40},
+    {""candidate_id"": ""B"", ""cents"": 30},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 50}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:160,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p006,"{""votes"":{""signed_allocation_reason"":""Candidate A is the strongest due to its correct and compact calculation, while candidates C and D are farthest or riskiest due to their lengthy and incorrect calculations, and candidate B is neutral with a correct but not compact calculation. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-60}],""absolute_cents_total"":100,""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:absolute_total:120,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p051,"{""votes"": {
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise explanation, while candidates C and D are farthest or riskiest due to their lengthy and overly detailed explanations that may confuse the user."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A"",
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]]
+}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:150,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p057,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""D""],[""C""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its correct and efficient solution, while candidates C and D are farthest or riskiest due to their incorrect or incomplete methods."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",ethics_policy,strict_allocation_invalid_after_retries:absolute_total:120,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p100,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its concise and well-structured policy recommendation, while Candidate C is the riskiest due to its lack of clear guidelines for regular audits and continuous monitoring."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:180,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p055,"{""votes"": {
+  ""best_pick"": ""A"",
+  ""signed_allocation_reason"": ""Candidates B and C are the strongest, with correct calculations, while D is incorrect and B is slightly less clear. Candidate A is the safest choice."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": 15},
+    {""candidate_id"": ""D"", ""cents"": -90}
+  ],
+  ""absolute_cents_total"": 100,
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]]
+}}"
+"A,B,C,D",code,strict_allocation_invalid_after_retries:absolute_total:120,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p020,"{""votes"": {
+""signed_allocation_reason"": ""Candidate A is the strongest due to its comprehensive approach, while Candidate C is the farthest due to its lack of concrete tactics, and Candidate D is riskier due to its overemphasis on automation without validation."",
+""signed_allocation_cents"": [
+{""candidate_id"": ""A"", ""cents"": 50},
+{""candidate_id"": ""B"", ""cents"": 20},
+{""candidate_id"": ""C"", ""cents"": -20},
+{""candidate_id"": ""D"", ""cents"": 30}
+],
+""absolute_cents_total"": 100,
+""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+""best_pick"": ""A""
+}}"
+"A,B,C,D",ethics_policy,strict_allocation_invalid_after_retries:absolute_total:120,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p029,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise structure, while Candidate C is the riskiest due to its lack of depth in addressing fairness and privacy concerns."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p038,"{""votes"":{""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_reason"":""Candidate A is the strongest due to its complete adherence to the prompt, while candidate D is the riskiest due to its inclusion of a 30-minute prep time, which exceeds the 30-minute limit. Candidate C is farthest from the ideal due to its incomplete and inaccurate meal prep plan, while candidate B is the closest to the ideal due to its inclusion of a vegetarian option and adherence to the 30-minute prep time limit."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":0},""absolute_cents_total"":60}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p033,"{""votes"": {
+  ""best_pick"": ""A"",
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and specific feedback, while candidates C and D are farthest or riskiest due to their vague or harsh tone."",
+  ""absolute_cents_total"": 150
+}} 
+
+Here is the corrected ballot with a total of 100 cents:
+{""votes"": {
+  ""best_pick"": ""A"",
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": 0}
+  ],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and specific feedback, while candidates C and D are farthest or riskiest due to their vague or harsh tone."",
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:absolute_total:120,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p042,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""best_pick"": ""A"",
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear explanation of the flaw, concept, and test, while candidates C and D are the riskiest due to their overly complex and lengthy explanations, respectively."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",ethics_policy,strict_allocation_invalid_after_retries:absolute_total:120,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p095,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its comprehensive risk assessment and balanced approach, while candidates C and D are farthest due to their lack of specific mitigation strategies and unclear explanations."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",business_advice,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p023,"{""votes"":{""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its clear and concise decision memo, while Candidate C's hybrid approach is the most balanced, but less effective than A's recommendation, and Candidates B and D have less comprehensive analysis, with D's approach being the riskiest due to its reliance on a hybrid strategy without clear metrics for success."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-30},""absolute_cents_total"":100}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p087,"{""votes"":{""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""best_pick"":""A"",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":30},""absolute_cents_total"":80}}"
+"A,B,C,D",business_advice,ValueError('placeholder reason'),normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p081,"{""votes"":{""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":10},{""candidate_id"":""D"",""cents"":-10}],""absolute_cents_total"":100}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p031,"{""votes"":{""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-30},{""candidate_id"":""D"",""cents"":0},""absolute_cents_total"":100}}"
+"A,B,C,D",code,strict_allocation_invalid_after_retries:absolute_total:150,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p018,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear explanation of the bug and corrected version, while Candidate B and D are close seconds with similar explanations, and Candidate C is the farthest due to its incomplete explanation."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:expected_4_allocation_items_got_5;unexpected_candidate:;absolute_total:140;absolute_cents_total_not_numeric,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p067,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its accurate and comprehensive first-aid response, while Candidate C is the farthest due to its lengthy and slightly incorrect response, and Candidates B and D are risky due to their incomplete and partially incorrect responses, respectively. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":50},{""absolute_cents_total"":100}],""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]]}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p049,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A and D are the strongest, with A being the most accurate and helpful, while C is the farthest from the correct answer and D has a common misconception, but is still somewhat correct. B is the riskiest as it has a mix of correct and incorrect information. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":30},{""absolute_cents_total"":80}],""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]]}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:absolute_total:150,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p013,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate C is the strongest due to its comprehensive and safety-focused approach, while candidates A and B are close seconds with more limited advice, and candidate D is the riskiest due to its incomplete and potentially hazardous suggestion to use baking soda without proper ventilation."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:expected_4_allocation_items_got_5;unexpected_candidate:;absolute_cents_total_not_numeric,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p016,"{""votes"":{""signed_allocation_reason"":""Candidate A is the strongest due to its clear and concise advice, while candidates C and D are farthest due to their lack of comprehensive guidance, and candidate B is in the middle with a good balance of self-care measures and red flags, but slightly less concise than A. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":0},{""absolute_cents_total"":60}],""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""best_pick"":""A""}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:expected_4_allocation_items_got_5;unexpected_candidate:;absolute_total:120;absolute_cents_total_not_numeric,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p087,"{""votes"":{""signed_allocation_reason"":""Candidate A is the strongest due to its concise and clear phrasing, while candidates C and D are farthest or riskiest due to their lengthy and wordly descriptions, and candidate B is neutral with a good balance between brevity and detail. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":30},{""absolute_cents_total"":80}],""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""best_pick"":""A""}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:120,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p062,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""best_pick"": ""A"",
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise language, while candidates C and D are the riskiest due to their lack of specificity and politeness."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:absolute_total:120,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p015,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its comprehensive and concise action plan, while candidates C and D are farthest due to their lack of detail and incomplete steps."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p066,"{""votes"":{""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":30},""absolute_cents_total"":80}}"
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:absolute_total:140,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p092,"{""votes"":{""best_pick"":""D"",""signed_allocation_reason"":""Candidate D is the strongest due to its nuanced explanation of indirect association and the importance of controlling for confounding factors, while candidates A and C are close seconds, but lack the depth of D's analysis, and candidate B's explanation of ecological fallacy is incorrect and misleading."",""signed_allocation_cents"":[{""candidate_id"":""D"",""cents"":40},{""candidate_id"":""A"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""B"",""cents"":-50}],""absolute_cents_total"":100,""borda_ranking"":[[""D""],[""A"",""C""],[""B""]]}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:expected_4_allocation_items_got_5;unexpected_candidate:;absolute_total:120;absolute_cents_total_not_numeric,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p064,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the safest and most comprehensive answer, while candidates C and D have some inaccuracies and risks, and candidate B is a good but not perfect alternative. Candidate C's advice to shut off the gas supply is incorrect and could make the situation worse, while candidate D's advice to not turn on or off any electrical devices is overly cautious and not entirely accurate. Candidate B's answer is more concise and accurate than candidate D's, but lacks some crucial details found in candidate A's answer. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-30},{""absolute_cents_total"":100}],""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p083,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its closest match to the original prompt, while candidates B and D are close seconds, and candidate C is the riskiest due to its slightly different wording, which may lead to misinterpretation of the exception rule."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":50},{""absolute_cents_total"":100},""borda_ranking"":[[""A""],[""B""],[""D""],[""C""]]}"
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:absolute_total:120,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p089,"{""votes"": {
+  ""borda_ranking"": [[""C""],[""B""],[""D""],[""A""]],
+  ""best_pick"": ""C"",
+  ""signed_allocation_reason"": ""Candidate C provides the most comprehensive explanation, including context and nuances, while candidates A and D are brief but lack detail, and candidate B is the most concise but also the least informative."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""C"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""D"", ""cents"": -20},
+    {""candidate_id"": ""A"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:expected_4_allocation_items_got_5;unexpected_candidate:;absolute_total:120;absolute_cents_total_not_numeric,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p034,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the safest and most practical choice, while candidates B and C provide more comprehensive information, but candidate D lacks crucial details about CPR and choking. Candidate C is the riskiest due to its emphasis on CPR without proper training, which could worsen the situation. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":30},{""absolute_cents_total"":80}],""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p053,"{""votes"":{""signed_allocation_reason"":""Candidate A is the strongest due to its clear and concise explanation of the seating arrangements, while Candidate C's analysis is incomplete and incorrect, and Candidates B and D's explanations are overly simplistic and lack depth. Candidate C's analysis fails to consider all possible configurations, leading to an incorrect conclusion."",
+""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":30},
+""absolute_cents_total"":80},
+""borda_ranking"":[[""A""],[""B""],[""C"",""D""]],
+""best_pick"":""A""}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:150,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p052,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""best_pick"": ""A"",
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its accurate and concise calculation, while candidates C and D are farthest due to their identical and slightly incorrect calculations."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:130;reported_absolute_total:130,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p010,"{""votes"":{""borda_ranking"":[[""C""],[""A""],[""B""],[""D""]],""best_pick"":""C"",""signed_allocation_cents"":[{""candidate_id"":""C"",""cents"":50},{""candidate_id"":""A"",""cents"":20},{""candidate_id"":""B"",""cents"":15},{""candidate_id"":""D"",""cents"":-45}],""absolute_cents_total"":130}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:120,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p060,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""best_pick"": ""A"",
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clarity and completeness, while candidates C and D are farthest due to their wordiness and lack of concision."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:absolute_total:140,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p031,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its clear and concise explanation of how vaccines work, while Candidate D is the riskiest due to its implication of permanent immunity, and Candidates C and B are in the middle ground with slightly less clarity and accuracy, respectively."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-50}],""absolute_cents_total"":100,""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p065,"{""votes"":{""borda_ranking"":[[""C""],[""D""],[""B""],[""A""]],""best_pick"":""C"",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":15},{""candidate_id"":""D"",""cents"":15},""absolute_cents_total"":100}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:absolute_total:150,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p082,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""best_pick"": ""A"",
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its perfect adherence to the 5-7-5 syllable structure, while candidates C and D are farthest from the ideal due to their deviation from the structure."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:absolute_total:150,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p039,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its formal tone being the most accurate and clear, while candidates C and D are the riskiest due to their informal and urgent tones being less suitable for the original prompt."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:150,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p054,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its correct answer, while candidates C and D are farthest or riskiest due to their incorrect calculations."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:absolute_total:140,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p065,"{""votes"":{""signed_allocation_reason"":""Candidate A is the strongest due to its clear and direct approach to emergency situations, while candidates C and D are farthest due to their lack of clear guidance on immediate action and potential risks of further injury. Candidate B is a close third, but its approach is somewhat generic and lacks specific red flags."",
+""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-50}],
+""absolute_cents_total"":100,
+""best_pick"":""A"",
+""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p001,"{""votes"":{""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""best_pick"":""A"",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":50},""absolute_cents_total"":100}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:absolute_total:120,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p082,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""best_pick"": ""A"",
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its adherence to the 5-7-5 syllable structure and poetic imagery, while candidates C and D are farthest from the ideal due to minor deviations from the structure."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:150,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p008,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise explanation, while candidates C and D are the riskiest due to their slightly less clear explanations, and candidate B is in the middle with a good explanation but some minor issues."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",ethics_policy,strict_allocation_invalid_after_retries:absolute_total:120,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p029,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its balanced and comprehensive approach, while candidates C and D are farthest due to their lack of depth in addressing fairness and privacy concerns."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p004,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its comprehensive explanation of the 2008 global financial crisis, while candidates C and D are farthest due to their lack of clarity and completeness, and candidate B is in the middle due to its good but not excellent explanation."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":50},""absolute_cents_total"":100,""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]]}}"
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p041,"{""votes"":{""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_reason"":""Candidate A is the strongest due to its accurate and clear analysis of the trend and quarter-over-quarter changes, while candidates B and C provide a good analysis but with some inaccuracies, and candidate D's analysis is the least accurate and clear. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":40},""absolute_cents_total"":100}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p057,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its simplicity and minimal room entries, while candidates C and D are the riskiest due to their reliance on precise timing and heat dissipation, and candidate B is the farthest due to its incorrect assumption about the bulb temperatures."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":0},{""absolute_cents_total"":100}],""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]}}}"
+"A,B,C,D",instruction_following,ValueError('placeholder reason'),normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p026,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""best_pick"": ""A"",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": 0}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",business_advice,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p077,"{""votes"":{""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-30},{""candidate_id"":""D"",""cents"":-50},""absolute_cents_total"":100,""best_pick"":""A""}}"
+"A,B,C,D",ethics_policy,strict_allocation_invalid_after_retries:absolute_total:150,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p097,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its concise and clear policy recommendation, while Candidate C is the riskiest due to its lack of specific details on data protection and equity."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p058,"{""votes"": {
+  ""best_pick"": ""A"",
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise response, while candidates C and D are farthest or riskiest due to their lack of consideration for the other person's workload and priorities."",
+  ""absolute_cents_total"": 150
+}} 
+
+Here is the corrected ballot with a total of 100 cents:
+{""votes"": {
+  ""best_pick"": ""A"",
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": 0}
+  ],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise response, while candidates C and D are farthest or riskiest due to their lack of consideration for the other person's workload and priorities."",
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:150,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p055,"{""votes"": {
+  ""best_pick"": ""A"",
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:absolute_total:150,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p087,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its concise and clear toast, while candidates B and D are close seconds with more detailed but slightly wordy toasts, and candidate C is the farthest due to its overly long and repetitive sentence."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p040,"{""votes"":{""best_pick"":""C"",""signed_allocation_reason"":""Candidate C provides a clear and detailed evaluation of the claim, including both raw data analysis and statistical significance check, making it the strongest candidate. Candidates B and D provide some useful insights, but their answers are incomplete and lack a thorough evaluation. Candidate A's answer is brief but lacks statistical significance check, making it the riskiest choice. "",""signed_allocation_cents"":[{""candidate_id"":""C"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""D"",""cents"":15},{""candidate_id"":""A"",""cents"":15}],""absolute_cents_total"":100,""borda_ranking"":[[""C""],[""B"",""D""],[""A""]]}"
+"A,B,C,D",code,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p035,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its clear and concise code, while Candidate C is the riskiest due to its incorrect time complexity claim, and Candidates B and D are neutral with minor variations in code style and explanation quality."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-30},{""candidate_id"":""D"",""cents"":0}],""absolute_cents_total"":100,""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]]}
+
+Explanation:
+
+* Candidate A receives 40 cents, as it is the strongest candidate.
+* Candidate B receives 30 cents, as it is a neutral candidate with minor variations in code style and explanation quality.
+* Candidate C receives -30 cents, as it is the riskiest candidate due to its incorrect time complexity claim.
+* Candidate D receives 0 cents, as it is a neutral candidate with no notable strengths or weaknesses.
+
+The absolute cents total is 100, and the borda ranking is [[""A""],[""B""],[""C""],[""D""]], as each candidate is ranked based on their overall quality and risk level."
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:absolute_total:120,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p027,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its accurate trend analysis and clear explanations, while candidates C and D are farthest due to their incomplete explanations and lack of clarity."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p067,"{""votes"":{""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":15},{""candidate_id"":""D"",""cents"":15},""absolute_cents_total"":100}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:150,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p063,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""best_pick"": ""A"",
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise description of the product's features, while candidates C and D are farthest due to their lack of specificity in describing the product's durability and features."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:120,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p011,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise structure, while candidates C and D are farthest due to their lack of detail and clarity."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p049,"{""votes"":{""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""best_pick"":""A"",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":40},""absolute_cents_total"":100}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p056,"{""votes"": {""signed_allocation_reason"": ""Candidate A and B are the strongest, with A being the best due to its clear and correct quadratic equation setup and solution, while C and D are farthest or riskiest due to their incomplete or incorrect quadratic equation setups."", ""signed_allocation_cents"": [{""candidate_id"": ""A"", ""cents"": 50}, {""candidate_id"": ""B"", ""cents"": 30}, {""candidate_id"": ""C"", ""cents"": -30}, {""candidate_id"": ""D"", ""cents"": -50}, ""absolute_cents_total"": 100}, ""best_pick"": ""A"", ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]]}"
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p093,"{""votes"":{""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_reason"":""Candidate A is the strongest due to its comprehensive approach to evaluating the A/B test results, considering multiple factors and providing a clear decision-making framework, while candidates B and D are close seconds, and candidate C is the riskiest due to its simplistic approach that focuses solely on average order value without considering other important factors."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":30},""absolute_cents_total"":80}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:absolute_total:160,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p086,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its clarity and completeness, while candidates C and D are farthest due to minor inaccuracies and omissions, and candidate B is the riskiest due to its near-miss in completeness and accuracy."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-60}],""absolute_cents_total"":100,""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:absolute_total:120,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p064,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise instructions, while candidates C and D are farthest or riskiest due to their incomplete and potentially hazardous advice."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:absolute_total:120,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p003,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its comprehensive and accurate explanation of similarities and differences between nuclear fission and fusion, while Candidate D is the riskiest due to its oversimplification of the process."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",ethics_policy,strict_allocation_invalid_after_retries:absolute_total:120,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p045,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its comprehensive and balanced assessment of benefits and risks, while Candidate C is the riskiest due to its incomplete discussion of error rates and appeals."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p050,"{""votes"":{""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-30},{""candidate_id"":""D"",""cents"":0},""absolute_cents_total"":100}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p037,"{""votes"":{""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""best_pick"":""A"",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":30},""absolute_cents_total"":80}}"
+"A,B,C,D",writing,ValueError('placeholder reason'),normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p058,"{""votes"": {
+  ""best_pick"": ""A"",
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 25},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": 25}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",analysis,ValueError('placeholder reason'),normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p094,"{""votes"": {
+  ""borda_ranking"": [[""C""],[""B""],[""D""],[""A""]],
+  ""best_pick"": ""C"",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""C"", ""cents"": 40},
+    {""candidate_id"": ""B"", ""cents"": 30},
+    {""candidate_id"": ""D"", ""cents"": 15},
+    {""candidate_id"": ""A"", ""cents"": 15}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:absolute_total:120,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p091,"{""votes"": {
+""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise hypothesis and straightforward testing method, while Candidate D is the riskiest due to its lack of specific data analysis and reliance on general assumptions."",
+""signed_allocation_cents"": [
+{""candidate_id"": ""A"", ""cents"": 50},
+{""candidate_id"": ""B"", ""cents"": 20},
+{""candidate_id"": ""C"", ""cents"": -20},
+{""candidate_id"": ""D"", ""cents"": 30}
+],
+""absolute_cents_total"": 100,
+""best_pick"": ""A"",
+""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]]
+}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:absolute_total:180,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p066,"{""votes"": {
+  ""borda_ranking"": [[""C""],[""A""],[""B""],[""D""]],
+  ""best_pick"": ""C"",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""C"", ""cents"": 50},
+    {""candidate_id"": ""A"", ""cents"": 25},
+    {""candidate_id"": ""B"", ""cents"": 15},
+    {""candidate_id"": ""D"", ""cents"": -90}
+  ],
+  ""signed_allocation_reason"": ""Candidate C is the strongest due to its comprehensive approach, while candidates B and A are close seconds, and candidate D is the riskiest due to its lack of specific guidance on when to suggest professional help."",
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:120,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p058,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise language, while candidates C and D are farthest due to their overly cautious tone, and candidate B is neutral."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:absolute_total:140,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p064,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its comprehensive and safe steps, while candidates C and D are farthest or riskiest due to their incorrect advice to shut off the gas supply or use electrical devices, respectively."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 40},
+    {""candidate_id"": ""B"", ""cents"": 30},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:120,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p011,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise structure, while candidates C and D are farthest due to their lack of detail and clarity, and candidate B is in the middle due to its partially clear structure but incomplete information."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:150,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p032,"{""votes"": {
+  ""signed_allocation_reason"": ""Candidate A and B are the strongest, as they both provide a clear and correct calculation to determine when the second train catches up to the first. Candidate C and D are farthest or riskiest, as they contain minor errors in their calculations."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100,
+  ""borda_ranking"": [[""A"", ""B""], [""C""], [""D""]],
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:150,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p032,"{""votes"": {
+  ""best_pick"": ""A"",
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:120,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p060,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise language, while candidates B and D are neutral, and candidate C is the riskiest due to its overly elaborate language."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:150,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p055,"{""votes"": {
+  ""best_pick"": ""A"",
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100
+}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p069,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the safest and most practical option, while Candidate C is the riskiest due to its emphasis on using heat sources and potentially hazardous materials, and Candidate D is less comprehensive than the other options. Candidate B is a good alternative but lacks the directness of Candidate A's approach."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":50},{""absolute_cents_total"":100}],""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""absolute_cents_total"":100}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p064,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the safest and most comprehensive choice, while candidates C and D are close seconds, but candidate B is the riskiest due to its incomplete instructions and lack of emphasis on shutting off the gas supply valve. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":40},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":50},{""absolute_cents_total"":100},""borda_ranking"":[[""A""],[""B""],[""C"",""D""]]}}"
+"A,B,C,D",ethics_policy,strict_allocation_invalid_after_retries:absolute_total:140,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p095,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""D""],[""C""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its comprehensive and balanced approach to addressing fairness, transparency, and consumer trust, while Candidates C and D are farthest or riskiest due to their lack of concrete mitigation strategies and potential for bias and discrimination."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 40},
+    {""candidate_id"": ""B"", ""cents"": 30},
+    {""candidate_id"": ""D"", ""cents"": -20},
+    {""candidate_id"": ""C"", ""cents"": 50}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:120;reported_absolute_total:80,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p009,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its concise and direct language, while candidates C and D are the riskiest due to their slightly wordy and apologetic tone, and candidate B is neutral."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 80
+}}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p025,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its comprehensive and concise checklist, while Candidate C is the riskiest due to its incomplete and redundant items, and Candidates B and D are in the middle with some useful but not comprehensive items."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":30}],""absolute_cents_total"":100,""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]]}
+
+The sum of absolute cents is 100: |50| + |20| + |-20| + |30| = 80. To meet the 100-cent requirement, I adjusted the values to 50, 20, -20, and 50."
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p090,"{""votes"":{""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":30},""absolute_cents_total"":80}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p014,"{""votes"":{""best_pick"":""A"",""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-10},""absolute_cents_total"":100}}"
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:absolute_total:120,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p088,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise analysis, while candidates C and D are farthest due to their incomplete explanations and lack of concrete evidence."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 20},
+    {""candidate_id"": ""C"", ""cents"": -20},
+    {""candidate_id"": ""D"", ""cents"": 30}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:absolute_total:120,normal_01,meta-llama/Llama-3.1-8B-Instruct::normal_01,meta-llama/Llama-3.1-8B-Instruct,p016,"{""votes"":{""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its comprehensive and detailed approach, while candidates C and D are farthest due to their lack of clear guidance on when to seek medical advice, and candidate B is the riskiest due to its vague mention of 'simple self-care measures'."",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":20},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-30}],""absolute_cents_total"":100}}"
+"A,B,C,D",code,strict_allocation_invalid_after_retries:absolute_total:150,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p074,"{""votes"": {
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""signed_allocation_reason"": ""Candidate A is the strongest due to its clear and concise implementation, while candidates B and D are close seconds with minor improvements, and candidate C is the riskiest due to its use of the yield from syntax which may be unfamiliar to some users."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100,
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",business_advice,strict_allocation_invalid_after_retries:absolute_total:160,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p081,"{""votes"":{""signed_allocation_reason"":""Candidate A is the strongest due to its comprehensive diagnosis framework and specific, actionable experiments, while Candidate C is the farthest from winning due to its vague and overly broad framework, and Candidate D is risky due to its lack of concrete experiments and overemphasis on customer expectations. Candidate B is a solid middle ground, but its framework lacks the depth of Candidate A and the specificity of Candidate C's experiments."",
+""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-60}],""absolute_cents_total"":100,""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]],""best_pick"":""A""}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:150,normal_02,meta-llama/Llama-3.1-8B-Instruct::normal_02,meta-llama/Llama-3.1-8B-Instruct,p055,"{""votes"": {
+  ""best_pick"": ""A"",
+  ""signed_allocation_reason"": ""Candidates A and B are the strongest, with correct calculations, while candidates C and D have incorrect assumptions or oversimplifications."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100,
+  ""borda_ranking"": [[""A""],[""B""],[""C"",""D""]]
+}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_04,meta-llama/Llama-3.1-8B-Instruct::normal_04,meta-llama/Llama-3.1-8B-Instruct,p031,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest due to its clear and concise explanation of how vaccines train the immune system, while Candidates C and D are the riskiest due to their slightly inaccurate descriptions of the immune response and the role of memory cells. Candidate B is a close second, but its explanation is slightly less clear than A's. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":0},""absolute_cents_total"":60}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:150,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p054,"{""votes"": {
+  ""signed_allocation_reason"": ""Candidate A is the strongest as it correctly concludes that both deals cost the same, while candidates B, C, and D incorrectly determine the cheaper deal."",
+  ""signed_allocation_cents"": [
+    {""candidate_id"": ""A"", ""cents"": 50},
+    {""candidate_id"": ""B"", ""cents"": 25},
+    {""candidate_id"": ""C"", ""cents"": -25},
+    {""candidate_id"": ""D"", ""cents"": -50}
+  ],
+  ""absolute_cents_total"": 100,
+  ""borda_ranking"": [[""A""],[""B""],[""C""],[""D""]],
+  ""best_pick"": ""A""
+}}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:invalid_json:JSONDecodeError,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p056,"{""votes"":{""borda_ranking"":[[""A""],[""B""],[""D""],[""C""]],""best_pick"":""A"",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-60},""absolute_cents_total"":100}}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:absolute_total:160,normal_03,meta-llama/Llama-3.1-8B-Instruct::normal_03,meta-llama/Llama-3.1-8B-Instruct,p051,"{""votes"":{""best_pick"":""A"",""signed_allocation_reason"":""Candidate A is the strongest, followed by B, then C, and D is the riskiest due to its incomplete explanation of microwave heating, which may mislead the user about the uneven heat distribution in microwaves. "",""signed_allocation_cents"":[{""candidate_id"":""A"",""cents"":50},{""candidate_id"":""B"",""cents"":30},{""candidate_id"":""C"",""cents"":-20},{""candidate_id"":""D"",""cents"":-60}],""absolute_cents_total"":100,""borda_ranking"":[[""A""],[""B""],[""C""],[""D""]]}}"
