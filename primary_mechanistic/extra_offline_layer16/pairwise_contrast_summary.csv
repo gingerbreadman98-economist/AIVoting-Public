@@ -1,0 +1,2 @@
+target,feature_set,n_rows,n_folds,mean_auc,std_auc
+pairwise_allocation_preference,layer_16_candidate_difference,4368,5,0.7869388909244365,0.009993176302306306

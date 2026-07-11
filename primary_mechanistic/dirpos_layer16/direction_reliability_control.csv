@@ -1,0 +1,2 @@
+layer,n_repeats,raw_help_hurt_cosine,mean_help_reliability,std_help_reliability,mean_hurt_reliability,std_hurt_reliability,mean_cross_half_cosine,std_cross_half_cosine,mean_corrected_cosine,std_corrected_cosine
+16,10,-0.9061890654328103,0.038491305546781825,0.01248020024627544,0.042357786302441816,0.013814880834721955,-0.040835485182441136,0.012713909187141686,-1.0170734632491798,0.05024106797571156

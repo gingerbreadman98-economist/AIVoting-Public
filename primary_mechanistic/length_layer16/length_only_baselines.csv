@@ -1,0 +1,9 @@
+target,kind,feature,mean_metric,std_metric,n_folds
+voter_help_label,classification,length_only,0.6138950138144839,0.01989022562135493,5
+voter_hurt_label,classification,length_only,0.6427672138329689,0.025556269099732458,5
+voter_best_pick_vote,classification,length_only,0.595017847000525,0.027137079491378904,5
+voter_signed_top_choice,classification,length_only,0.7112966877002581,0.04691618243398468,5
+voter_allocation,regression,length_only,0.0769545178389048,0.02645331799028983,5
+voter_allocation_z,regression,length_only,0.10710178114916753,0.04028736356123528,5
+voter_positive_mass,regression,length_only,0.07727791590246617,0.029096039746961407,5
+voter_negative_mass,regression,length_only,0.04575036598090339,0.022269197226485054,5

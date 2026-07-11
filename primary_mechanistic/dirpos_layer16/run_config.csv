@@ -1,0 +1,2 @@
+mech_output_dir,layer,pca_components,split_half_repeats,logistic_c,seed
+mech_hidden,16,128,10,0.1,7

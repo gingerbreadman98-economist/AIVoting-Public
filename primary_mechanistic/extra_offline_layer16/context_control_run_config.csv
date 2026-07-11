@@ -1,0 +1,2 @@
+mech_output_dir,layer,field_order_available,field_order_categories_json
+mech_hidden,16,True,"[""best_pick,borda_ranking,signed_allocation"", ""best_pick,signed_allocation,borda_ranking"", ""borda_ranking,best_pick,signed_allocation"", ""borda_ranking,signed_allocation,best_pick"", ""signed_allocation,best_pick,borda_ranking"", ""signed_allocation,borda_ranking,best_pick""]"

@@ -1,0 +1,2 @@
+mech_output_dir,layer,probe_c,direction_c,split_half_repeats,seed
+mech_hidden,16,0.1,0.01,10,7

@@ -1,0 +1,15 @@
+group,n,mean_length,median_length,std_length,metric,value
+helped,918,128.02505446623093,98.5,95.06753948065307,length_summary,
+hurt,563,174.68383658969805,186.0,99.51146852257077,length_summary,
+neutral,51,83.50980392156863,44.0,77.3589475537783,length_summary,
+alloc_top_choice,391,92.0843989769821,51.0,84.1517356680367,length_summary,
+not_alloc_top_choice,1141,161.37423312883436,156.0,98.01214041693785,length_summary,
+best_pick,383,120.34986945169713,80.0,96.67964268336141,length_summary,
+not_best_pick,1149,151.46997389033942,140.0,99.03710574902178,length_summary,
+all,1532,143.68994778067886,124.0,99.37095140182467,length_summary,
+length_vs_allocation,1532,,,,pearson_r,-0.2840764086799651
+length_vs_help,1532,,,,pearson_r,-0.1927547764392078
+length_vs_hurt,1532,,,,pearson_r,0.23774365311205323
+length_vs_best_pick,1532,,,,pearson_r,-0.13560703924081693
+length_vs_positive_mass,1532,,,,pearson_r,-0.28315415525072307
+length_vs_negative_mass,1532,,,,pearson_r,0.2261670860960733

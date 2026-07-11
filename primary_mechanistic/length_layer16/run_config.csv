@@ -1,0 +1,2 @@
+mech_output_dir,layer,pca_components,length_metric,n_strata,logistic_c,seed,n_rows
+mech_hidden,16,128,word,4,0.1,7,1532

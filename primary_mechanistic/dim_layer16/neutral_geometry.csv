@@ -1,0 +1,2 @@
+raw_full_data_cosine_hn_tn,note_raw,mean_rel_help_vs_neutral,std_rel_help_vs_neutral,mean_rel_hurt_vs_neutral,std_rel_hurt_vs_neutral,mean_cross_half_cosine,std_cross_half_cosine,mean_corrected_cosine,std_corrected_cosine,n_valid_corrections
+0.7152682354522573,inflated by shared neutral rows; use cross-half values,0.0012949702088534052,0.01775978066406918,0.07546089421978697,0.022068877525084896,-0.0007972467689955735,0.02012441092067791,0.16320129012151208,0.40211772047430294,6
