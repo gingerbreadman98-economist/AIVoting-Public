@@ -1,0 +1,5 @@
+exact_match_rate,method,n,tie_inclusive_match_rate,tie_rate
+0.34,direct_best_pick,100,0.49,0.1
+0.35,direct_borda,100,0.5,0.03
+0.37,direct_signed_allocation,100,0.47,0.0
+0.26,single_weak_selector:Qwen/Qwen2.5-7B-Instruct,100,0.41,0.0

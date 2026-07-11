@@ -1,0 +1,101 @@
+domain,judge_consensus_share,judge_model,judge_repeats,judge_vote_counts_json,judge_winner,prompt_id
+factual_qa,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 3}",C,p001
+factual_qa,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 2, ""D"": 1}",C,p002
+factual_qa,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""D"": 1}",B,p003
+factual_qa,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 1, ""D"": 2}",D,p004
+reasoning,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 3}",B,p005
+reasoning,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""D"": 2}",D,p006
+reasoning,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""D"": 3}",D,p007
+reasoning,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""D"": 1}",B,p008
+writing,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 1, ""D"": 1}","TIE:B,C,D",p009
+writing,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 1, ""D"": 2}",D,p010
+writing,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 3}",C,p011
+writing,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""D"": 3}",D,p012
+safety,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 1, ""D"": 2}",D,p013
+safety,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 2, ""D"": 1}",C,p014
+safety,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 1, ""D"": 2}",D,p015
+safety,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""A"": 1, ""B"": 1, ""D"": 1}","TIE:A,B,D",p016
+code,1.0,Qwen/Qwen2.5-14B-Instruct,2,"{""D"": 2}",D,p017
+code,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 3}",C,p018
+code,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 1, ""D"": 2}",D,p019
+code,1.0,Qwen/Qwen2.5-14B-Instruct,2,"{""D"": 2}",D,p020
+business_advice,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 2}",C,p021
+business_advice,1.0,Qwen/Qwen2.5-14B-Instruct,1,"{""C"": 1}",C,p022
+business_advice,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""A"": 1, ""C"": 1, ""D"": 1}","TIE:A,C,D",p023
+business_advice,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 2, ""D"": 1}",C,p024
+instruction_following,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 1, ""D"": 1}","TIE:B,C,D",p025
+instruction_following,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""A"": 1, ""B"": 2}",B,p026
+analysis,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""A"": 2, ""B"": 1}",A,p027
+analysis,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""A"": 2, ""D"": 1}",A,p028
+ethics_policy,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""D"": 1}",B,p029
+ethics_policy,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""D"": 3}",D,p030
+factual_qa,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 1, ""D"": 1}","TIE:B,C,D",p031
+reasoning,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""D"": 2}",D,p032
+writing,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 2, ""D"": 1}",C,p033
+safety,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""A"": 1, ""D"": 2}",D,p034
+code,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""A"": 1, ""B"": 2}",B,p035
+business_advice,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""D"": 1}",B,p036
+instruction_following,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""A"": 2, ""C"": 1}",A,p037
+instruction_following,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""D"": 1}",B,p038
+instruction_following,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 1, ""D"": 2}",D,p039
+analysis,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""D"": 3}",D,p040
+analysis,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 1, ""D"": 2}",D,p041
+analysis,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""D"": 1}",B,p042
+ethics_policy,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 2, ""D"": 1}",C,p043
+ethics_policy,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 1, ""D"": 1}","TIE:B,C,D",p044
+ethics_policy,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""D"": 1}",B,p045
+factual_qa,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""D"": 3}",D,p046
+factual_qa,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""A"": 1, ""D"": 2}",D,p047
+factual_qa,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 2, ""D"": 1}",C,p048
+factual_qa,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 2, ""D"": 1}",C,p049
+factual_qa,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""A"": 1, ""B"": 1, ""D"": 1}","TIE:A,B,D",p050
+factual_qa,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""A"": 1, ""B"": 2}",B,p051
+reasoning,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 3}",C,p052
+reasoning,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""D"": 1}",B,p053
+reasoning,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 1, ""D"": 1}","TIE:B,C,D",p054
+reasoning,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 2}",C,p055
+reasoning,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""D"": 3}",D,p056
+reasoning,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""D"": 3}",D,p057
+writing,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""C"": 1}",B,p058
+writing,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""D"": 2}",D,p059
+writing,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 3}",B,p060
+writing,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 1, ""D"": 1}","TIE:B,C,D",p061
+writing,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""D"": 2}",D,p062
+writing,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 2}",C,p063
+safety,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 3}",C,p064
+safety,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 1, ""D"": 2}",D,p065
+safety,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 1, ""D"": 1}","TIE:B,C,D",p066
+safety,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 2}",C,p067
+safety,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 1, ""D"": 2}",D,p068
+safety,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""D"": 1}",B,p069
+code,1.0,Qwen/Qwen2.5-14B-Instruct,2,"{""D"": 2}",D,p070
+code,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 2}",C,p071
+code,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 1, ""D"": 2}",D,p072
+code,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""C"": 1}",B,p073
+code,1.0,Qwen/Qwen2.5-14B-Instruct,1,"{""A"": 1}",A,p074
+code,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""D"": 1}",B,p075
+business_advice,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""D"": 1}",B,p076
+business_advice,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""D"": 3}",D,p077
+business_advice,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 2}",C,p078
+business_advice,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 2, ""D"": 1}",C,p079
+business_advice,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 1, ""D"": 2}",D,p080
+business_advice,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 1, ""D"": 2}",D,p081
+instruction_following,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 1, ""D"": 1}","TIE:B,C,D",p082
+instruction_following,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""D"": 2}",D,p083
+instruction_following,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 3}",B,p084
+instruction_following,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 3}",C,p085
+instruction_following,0.5,Qwen/Qwen2.5-14B-Instruct,2,"{""B"": 1, ""D"": 1}","TIE:B,D",p086
+instruction_following,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""A"": 1, ""D"": 2}",D,p087
+analysis,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""D"": 3}",D,p088
+analysis,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 1, ""D"": 1}","TIE:B,C,D",p089
+analysis,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""D"": 2}",D,p090
+analysis,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 2, ""D"": 1}",C,p091
+analysis,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""C"": 1, ""D"": 2}",D,p092
+analysis,0.5,Qwen/Qwen2.5-14B-Instruct,2,"{""C"": 1, ""D"": 1}","TIE:C,D",p093
+analysis,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""D"": 3}",D,p094
+ethics_policy,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""D"": 3}",D,p095
+ethics_policy,0.6666666666666666,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 2, ""C"": 1}",B,p096
+ethics_policy,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 3}",B,p097
+ethics_policy,1.0,Qwen/Qwen2.5-14B-Instruct,3,"{""D"": 3}",D,p098
+ethics_policy,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 1, ""D"": 1}","TIE:B,C,D",p099
+ethics_policy,0.3333333333333333,Qwen/Qwen2.5-14B-Instruct,3,"{""B"": 1, ""C"": 1, ""D"": 1}","TIE:B,C,D",p100
