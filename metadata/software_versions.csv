@@ -1,0 +1,10 @@
+component,version_or_value
+python,3.12
+torch,2.11.0+cu130
+vllm,0.24.0
+transformers,5.13.0
+scikit-learn,1.9.0
+pandas,3.0.3
+gpu,NVIDIA A100-PCIE-40GB
+cuda_runtime,13.0
+

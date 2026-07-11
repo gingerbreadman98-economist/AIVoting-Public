@@ -1,0 +1,7 @@
+role,model,revision,status
+primary_evaluator,Qwen/Qwen2.5-7B-Instruct,a09a35458c702b33eeacc393d103063234e8bc28,pinned in primary run
+candidate_generator,Qwen/Qwen2.5-3B-Instruct,main,mutable revision recorded by run
+external_validator,Qwen/Qwen2.5-14B-Instruct,not recorded,saved outputs only
+cross_model_evaluator,meta-llama/Llama-3.1-8B-Instruct,not recorded,saved outputs only
+cross_model_evaluator,google/gemma-3-12b-it,not recorded,saved outputs only
+
