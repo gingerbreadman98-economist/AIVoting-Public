@@ -1,0 +1,7 @@
+method,change_kind,n_prompts,effect_rate,placebo_rate,corrected_effect,discordant_treatment_only_b,discordant_placebo_only_c,mcnemar_exact_p
+best_pick,strict,100,0.46,0.09,0.37,39,2,7.839844329282641e-10
+borda,strict,100,0.39,0.12,0.27,31,4,3.4654513001441956e-06
+allocation,strict,100,0.26,0.1,0.16,19,3,0.0008554458618164062
+best_pick,disjoint,100,0.27,0.04,0.23,26,3,1.5236437320709229e-05
+borda,disjoint,100,0.32,0.09,0.23,28,5,6.618769839406013e-05
+allocation,disjoint,100,0.23,0.08,0.15000000000000002,18,3,0.0014896392822265625

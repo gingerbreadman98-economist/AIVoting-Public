@@ -1,0 +1,7 @@
+subset,method,n_prompts,n_winner_changes,winner_change_rate,mean_paired_ballots_per_prompt,min_paired_ballots_per_prompt,winner_change_ci95_low,winner_change_ci95_high
+all_paired,absolute_allocation,100,24,0.24,3.79,2,0.16691211265459965,0.3323251872329213
+all_paired,best_pick,100,46,0.46,3.79,2,0.36560643853331865,0.5573531460647615
+all_paired,borda,100,39,0.39,3.79,2,0.300167219319702,0.48797163832501844
+four_paired_ballots,absolute_allocation,80,21,0.2625,4.0,4,0.1785727122600286,0.3681916624656446
+four_paired_ballots,best_pick,80,35,0.4375,4.0,4,0.3341368457196415,0.5465906213134304
+four_paired_ballots,borda,80,29,0.3625,4.0,4,0.26570633724259446,0.47189409023016365

@@ -1,0 +1,2 @@
+anchor_dir,visible_dir,placebo_dir,evaluator_model,restrict_to_common_ballots,n_common_ballots
+July 10 outputs\qwen25_7b_latest_partial\vote_hidden_anchor,July 10 outputs\qwen25_7b_latest_partial\vote_visible,July 10 outputs\qwen25_7b_latest_partial\vote_hidden_placebo,Qwen/Qwen2.5-7B-Instruct,True,367

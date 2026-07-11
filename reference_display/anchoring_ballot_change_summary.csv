@@ -1,0 +1,2 @@
+n_ballots,best_pick_change_rate,any_polarity_change_rate,exact_allocation_match_rate,mean_allocation_l1_change,median_allocation_l1_change
+379,0.35092348284960423,0.5857519788918206,0.079155672823219,0.5870712401055409,0.5

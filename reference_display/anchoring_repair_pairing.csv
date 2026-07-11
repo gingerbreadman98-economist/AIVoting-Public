@@ -1,0 +1,5 @@
+hidden_clean,visible_clean,n_ballots
+False,False,26
+False,True,19
+True,False,28
+True,True,306

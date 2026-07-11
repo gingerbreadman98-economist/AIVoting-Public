@@ -1,0 +1,2 @@
+comparison_label,second_run_visible_reference,hidden_self_answer_rows,visible_self_answer_rows,paired_self_answers,exact_self_answer_matches,hidden_parsed_ballots,visible_parsed_ballots,paired_parsed_ballots,exact_candidate_order_matches,paired_prompts
+hidden_vs_visible,True,400,400,400,400,383,379,379,379,100
