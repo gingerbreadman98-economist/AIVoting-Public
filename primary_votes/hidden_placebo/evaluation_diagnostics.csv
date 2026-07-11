@@ -1,0 +1,5 @@
+evaluator,evaluator_id,evaluator_model,max_allocation,mean_allocation,min_allocation,n,std_allocation
+normal_01,Qwen/Qwen2.5-7B-Instruct::normal_01,Qwen/Qwen2.5-7B-Instruct,0.75,0.13901098901098902,-0.4,364,0.24985419415372875
+normal_02,Qwen/Qwen2.5-7B-Instruct::normal_02,Qwen/Qwen2.5-7B-Instruct,0.75,0.11989247311827958,-0.5,372,0.26295437224715273
+normal_03,Qwen/Qwen2.5-7B-Instruct::normal_03,Qwen/Qwen2.5-7B-Instruct,0.75,0.13951612903225807,-0.5,372,0.24691690769950578
+normal_04,Qwen/Qwen2.5-7B-Instruct::normal_04,Qwen/Qwen2.5-7B-Instruct,0.75,0.1295212765957447,-0.4,376,0.25433476013468137

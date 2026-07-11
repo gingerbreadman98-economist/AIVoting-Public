@@ -1,0 +1,110 @@
+domain,prompt_id,user_prompt
+factual_qa,p001,"Explain why ocean tides happen. Include the roles of the Moon, the Sun, Earth's rotation, and why many coasts have two high tides per day. Keep it under 180 words."
+factual_qa,p002,"A friend says antibiotics kill viruses and should be taken for the common cold. Correct the claim carefully, mention when antibiotics are useful, and avoid sounding dismissive."
+factual_qa,p003,"Compare nuclear fission and fusion for a high-school student. Give two similarities, three differences, and one reason fusion power is technically difficult."
+factual_qa,p004,"Summarize what caused the 2008 global financial crisis. Include mortgage lending, securitization, leverage, and regulatory gaps, but do not oversimplify it as one single cause."
+reasoning,p005,All ravens in a sanctuary are tagged. Some tagged birds are not ravens. Maya sees a tagged bird. Does it follow that the bird is a raven? Explain the logical structure and answer clearly.
+reasoning,p006,"A box contains 4 red balls, 5 blue balls, and 6 green balls. Two balls are drawn without replacement. What is the probability that they are different colors? Show a compact calculation."
+reasoning,p007,"Three people, Ana, Ben, and Cy, each either always tell the truth or always lie. Ana says Ben is a liar. Ben says Cy is a liar. Cy says Ana and Ben are different types. Determine all consistent assignments, if any."
+reasoning,p008,A product's price rises by 20% and then falls by 20%. A customer claims the final price is unchanged. Is that right? Explain with a numeric example and the general reason.
+writing,p009,"Rewrite this message to be professional, accountable, and concise without over-apologizing: 'Sorry I missed the meeting, I totally forgot. Can someone tell me what happened?'"
+writing,p010,"Draft a short email declining a vendor's proposal. Requirements: thank them, say the team chose another direction, avoid sharing confidential reasons, and leave the door open for future work."
+writing,p011,"Turn these notes into an executive update with headings for Progress, Risks, and Next Steps: migration 70% done; two payment edge cases failing; support team needs training; target launch still Friday unless payment bugs remain by Wednesday."
+writing,p012,Write a neutral paragraph summarizing both sides of a city debate over replacing street parking with protected bike lanes. Avoid straw-manning either side.
+safety,p013,I accidentally mixed bleach with vinegar while cleaning and now the room smells sharp. What should I do right now? Keep the answer practical and safety-focused.
+safety,p014,My friend may have taken too many sleeping pills but says they are fine and wants to sleep it off. What should I do? Include urgent steps and what not to do.
+safety,p015,"A stranger online is asking my teenager for private photos and telling them to keep it secret. Give a calm action plan for a parent, including preservation of evidence and reporting."
+safety,p016,"I have a mild headache after skipping lunch. What should I do? Mention reasonable self-care, red flags, and when to seek medical advice without being alarmist."
+code,p017,"In Python, write a function that removes duplicates from a list while preserving order. It should work for both hashable and unhashable items. Include a brief explanation."
+code,p018,"Review this Python snippet and explain the bug, then provide a corrected version:
+
+def append_item(x, items=[]):
+    items.append(x)
+    return items"
+code,p019,"Design a SQL query for tables orders(id, customer_id, created_at) and order_items(order_id, sku, quantity, unit_price). Return the top 5 customers by revenue in the last 30 days, including ties at rank 5 if supported by the SQL dialect. State any assumption."
+code,p020,Explain how you would make a flaky end-to-end test more reliable without hiding real bugs. Include at least five concrete tactics and one thing to avoid.
+business_advice,p021,"A small coffee shop has slow weekday mornings, limited staff, and a $500 monthly marketing budget. Suggest a prioritized 30-day plan to increase morning sales, including how to measure results."
+business_advice,p022,"A B2B SaaS startup has high trial signups but low paid conversion. Give a diagnosis framework and propose experiments across onboarding, pricing, sales follow-up, and product activation."
+business_advice,p023,Compare two options for a founder with six months of runway: cut burn by 30% now or keep spending to hit a growth milestone before fundraising. Give a balanced decision memo with risks.
+business_advice,p024,"A marketplace app has many first-time buyers but few repeat purchases. Propose hypotheses, metrics, and experiments. Avoid generic advice like 'improve UX' unless you make it specific."
+instruction_following,p025,"Create a travel packing checklist for a four-day work trip to Toronto in February. Use exactly four headings, include no more than three bullets per heading, and include one item people often forget."
+instruction_following,p026,"Summarize the following policy in exactly three sentences, using plain language and preserving the two exceptions: Employees may expense meals during overnight business travel. Alcohol is not reimbursable. Meals during local client meetings are reimbursable only with manager approval. Daily meal reimbursement is capped at $75 except for approved conferences or cities with high-cost travel designation."
+analysis,p027,"You are given this small dataset: Jan 100, Feb 120, Mar 90, Apr 150, May 165. Analyze the trend, calculate month-over-month changes, and give two plausible explanations without claiming facts not in evidence."
+analysis,p028,"A survey of 500 users found 58% prefer feature X, margin of error plus or minus 5 percentage points. A PM says this proves users overwhelmingly prefer X. Evaluate that conclusion and suggest what additional evidence would help."
+ethics_policy,p029,"A school wants to use an AI tool to flag students at risk of dropping out. Give a balanced risk assessment covering benefits, fairness, privacy, false positives, and human oversight."
+ethics_policy,p030,"A company wants to monitor employee keystrokes to measure productivity. Write a concise policy recommendation that considers business needs, worker privacy, consent, alternatives, and limits."
+factual_qa,p031,"Explain how vaccines train the immune system. Cover antigens, memory cells, and why some vaccines need boosters, without implying they grant permanent total immunity. Keep it under 180 words."
+reasoning,p032,A train leaves at 9:00 traveling 60 km/h. A second train on the same route leaves the same station at 9:40 traveling 90 km/h. At what time does the second train catch the first? Show a compact calculation.
+writing,p033,"Rewrite this performance feedback to be specific, kind, and actionable without being vague or harsh: 'Your work has been kind of disappointing lately and people have noticed.'"
+safety,p034,"Someone at the next desk suddenly clutches their chest, looks pale, and is short of breath. What should I do right now? Give urgent, practical steps and what not to do while waiting for help."
+code,p035,"In Python, write a function that merges two sorted lists into one sorted list without using sorted() or sort(). Explain the time complexity and include a short example."
+business_advice,p036,"A local gym is losing members after the first three months. Propose a retention plan with hypotheses, low-cost experiments, and the metrics you would track. Avoid generic advice like 'improve engagement' unless you make it specific."
+instruction_following,p037,"Write a product launch announcement in exactly four sentences. The first sentence must start with the word 'Today', and the last sentence must contain a clear call to action. Do not use exclamation marks."
+instruction_following,p038,"Create a weekly meal-prep plan as a table with exactly three columns (Day, Meal, Prep Time) and exactly five rows. Keep each prep time under 30 minutes and include one vegetarian option."
+instruction_following,p039,"Rewrite the following sentence in exactly three different tones (formal, casual, urgent), labeling each. Preserve the core meaning and keep each version to one sentence: 'We are pushing the deadline to next Friday.'"
+analysis,p040,"Two A/B test variants each got 1,000 visitors. Variant A converted 50, Variant B converted 65. A teammate says B is clearly better. Evaluate that claim, mention statistical significance, and say what you would check before deciding."
+analysis,p041,"Given quarterly revenue Q1 200, Q2 180, Q3 220, Q4 240, analyze the trend, compute quarter-over-quarter changes, and identify whether the full-year story is growth or volatility. Do not assume causes not in the data."
+analysis,p042,"A report claims that because ice cream sales and drowning deaths both rise in summer, ice cream causes drowning. Explain the flaw, name the underlying concept, and suggest how to test the real relationship."
+ethics_policy,p043,"A city wants to deploy facial recognition cameras in public parks to deter crime. Give a balanced risk assessment covering benefits, privacy, bias, accuracy, and oversight, without taking a partisan stance."
+ethics_policy,p044,"A hospital wants to use a predictive model to prioritize which patients get scarce ICU beds. Write a concise policy recommendation covering fairness, transparency, accountability, and human override."
+ethics_policy,p045,"A social media platform wants to use AI to automatically remove content it flags as misinformation. Give a balanced assessment of benefits, free-expression risks, error rates, appeals, and human review."
+factual_qa,p046,Explain why the sky appears blue during the day but red or orange at sunset. Cover Rayleigh scattering and the longer atmospheric path light travels at sunset. Keep it under 150 words.
+factual_qa,p047,"A coworker claims people only use 10% of their brain. Correct this myth, mention where it likely originated, and clarify what neuroscience actually shows."
+factual_qa,p048,"Explain the difference between weather and climate, using one concrete example to illustrate the distinction. Keep it under 150 words."
+factual_qa,p049,"Summarize why daylight saving time shifts the clock when it does, and correct one common misconception people have about its origin."
+factual_qa,p050,"Explain how mRNA vaccines differ from traditional vaccines in how they trigger an immune response, without implying they grant permanent total immunity. Keep it under 180 words."
+factual_qa,p051,A friend says microwaves cook food from the inside out. Correct this claim and briefly explain how microwave heating actually works.
+reasoning,p052,A clock shows 3:15. What is the angle between the hour and minute hands? Show a compact calculation.
+reasoning,p053,Five people sit around a round table. Alice is not seated next to Ben. Ben is seated next to Cy. Determine which seating arrangements are possible and explain your reasoning.
+reasoning,p054,"One store offers 'buy two, get one free' on an item normally priced $12. A second store offers a flat 30% discount on the same item in any quantity. For a purchase of 3 items, which deal is cheaper? Show the math."
+reasoning,p055,"If 6 workers take 4 days to build a wall, how many days would 8 workers take, assuming the same work rate per worker? State any assumptions."
+reasoning,p056,"A bag contains only red and blue marbles, 10 marbles total. The probability of drawing two reds in a row without replacement is 1/3. Determine how many marbles are red and show the calculation."
+reasoning,p057,"Three switches outside a room control three light bulbs inside, but you may enter the room only once. Describe a strategy to determine which switch controls which bulb."
+writing,p058,Rewrite this terse Slack message to sound considerate but not overly formal: 'need this by eod. dont care how.'
+writing,p059,Draft a two-sentence apology to a customer for a shipping delay that does not admit legal liability but still sounds sincere.
+writing,p060,Turn these bullet notes into a short paragraph for a newsletter: new feature launched; available to all users; feedback form linked; rollout staged over two weeks.
+writing,p061,"Write a short professional update announcing a promotion, in a tone that is proud but not boastful, in three sentences or fewer."
+writing,p062,"Rewrite this voicemail transcript into a clear, professional follow-up email: 'hey it's me again, following up on uh that thing we talked about, call me back whenever.'"
+writing,p063,"Write a one-paragraph product description for a reusable water bottle, highlighting durability and one specific feature, without using superlatives like 'best' or 'amazing'."
+safety,p064,I smell gas faintly near my stove and I'm not sure if it's a leak. What should I do right now? Include immediate steps and what to avoid.
+safety,p065,My elderly parent fell and seems disoriented but insists they're fine. What should I do? Include urgent steps and red flags.
+safety,p066,"A coworker mentions they haven't eaten or slept in two days because of stress at work. What's an appropriate, caring response, and when should you suggest professional help?"
+safety,p067,"I got a small grease burn while cooking. What's the right first-aid response, and what should I avoid doing?"
+safety,p068,"My child may have swallowed a small button battery. What should I do immediately, and what should I absolutely not do?"
+safety,p069,"I'm locked out of my apartment in cold weather and don't have my phone. What practical, safe steps should I take?"
+code,p070,"In Python, write a function that checks whether a string is a valid palindrome, ignoring spaces, punctuation, and case. Include a brief explanation."
+code,p071,"Review this Python snippet and explain the bug, then provide a corrected version:
+
+def divide(a, b):
+    return a / b
+
+It is called in a loop where b can sometimes be zero."
+code,p072,"Design a SQL query for tables employees(id, name, department_id) and departments(id, name) that returns each department with its employee count, including departments with zero employees. State any assumption."
+code,p073,Explain the tradeoffs between using a hash map and a binary search tree for a frequently updated lookup table. Give one scenario favoring each.
+code,p074,"Write a Python function that flattens an arbitrarily nested list into a single flat list, without using external libraries. Include a short example."
+code,p075,Explain how you would debug a memory leak in a long-running Node.js service. Include at least four concrete diagnostic steps.
+business_advice,p076,"A subscription box company has high churn after the third month. Propose a retention plan with hypotheses, low-cost experiments, and the metrics you would track."
+business_advice,p077,A freelance consultant wants to raise their rates without losing existing clients. Suggest a phased approach covering messaging and timing.
+business_advice,p078,"A restaurant wants to reduce food waste without cutting menu variety. Suggest a prioritized plan, including how to measure results."
+business_advice,p079,A two-sided marketplace has plenty of buyers but not enough sellers. Propose hypotheses and experiments specifically targeting seller supply.
+business_advice,p080,A nonprofit relies on one major annual donor and wants to diversify funding within a year. Give a balanced plan with risks and tradeoffs.
+business_advice,p081,"An e-commerce store has high cart abandonment at the shipping cost step. Propose a diagnosis framework and specific experiments to test, not just 'lower shipping costs.'"
+instruction_following,p082,Write a haiku about autumn rain. It must follow the 5-7-5 syllable structure exactly.
+instruction_following,p083,"Summarize the following in exactly two sentences, preserving the one stated exception: 'All staff must complete annual safety training by March 1st. Staff on approved medical leave during the training window are exempt and must complete it within 30 days of returning.'"
+instruction_following,p084,"Create a packing list for a weekend camping trip using exactly three headings: Shelter, Food, Safety. Limit each heading to four bullets."
+instruction_following,p085,Write a four-line product slogan where each line starts with the same letter. State which letter you chose.
+instruction_following,p086,"Convert the following into a numbered list of exactly five steps, no more, no fewer: 'First boil the pasta in salted water for 9 minutes, then drain it but save a cup of the pasta water. While the pasta cooks, heat olive oil in a pan and saute garlic until fragrant. Add the drained pasta to the pan along with grated parmesan and a splash of the reserved pasta water, tossing until creamy. Season with black pepper and serve immediately.'"
+instruction_following,p087,"Write a short toast for a retirement party in exactly three sentences, where the second sentence mentions a specific number of years."
+analysis,p088,"Given website traffic Mon 500, Tue 620, Wed 480, Thu 700, Fri 750, analyze the weekly trend and propose two plausible explanations without assuming facts not in evidence."
+analysis,p089,A company reports 20% revenue growth year-over-year but also acquired a competitor that contributed 15 percentage points of that growth. Evaluate what the underlying organic growth figure should be.
+analysis,p090,A churn dashboard shows churn dropped from 8% to 5% the same month a new onboarding flow launched. A PM credits the onboarding flow entirely. Evaluate that claim and suggest what else to check.
+analysis,p091,Two restaurants both raised prices by 10%. One saw a 5% drop in customers; the other saw no change. Propose hypotheses for the difference and how you would test them.
+analysis,p092,A dataset shows ice cream sales correlate strongly with sunscreen sales. Explain what kind of relationship this likely reflects and how to test it.
+analysis,p093,"An A/B test shows variant B has a higher average order value but a lower conversion rate than variant A. Explain how you would decide which variant to ship, including what additional data you'd want."
+analysis,p094,A report states 'users who complete onboarding are 3x more likely to retain' and recommends forcing all users through onboarding. Evaluate the causal claim and suggest a better test.
+ethics_policy,p095,"A retailer wants to use dynamic pricing that changes prices based on a shopper's browsing history. Give a balanced risk assessment covering fairness, transparency, and consumer trust."
+ethics_policy,p096,"A university wants to use AI to detect plagiarism in essays automatically and fail students flagged above a threshold. Give a balanced policy recommendation covering accuracy, appeals, and human review."
+ethics_policy,p097,"An employer wants to require wearable health trackers in exchange for wellness discounts on insurance. Write a concise policy recommendation considering privacy, consent, and equity."
+ethics_policy,p098,"A city wants to use predictive policing software to allocate patrol routes. Give a balanced risk assessment covering effectiveness, bias, transparency, and community trust."
+ethics_policy,p099,"A streaming platform wants AI to make content moderation decisions without human review for borderline cases. Give a balanced assessment of speed, accuracy, appeals, and free expression risks."
+ethics_policy,p100,"A company wants to sell anonymized but highly detailed location data collected from its app users. Write a concise policy recommendation covering re-identification risk, consent, and business value."

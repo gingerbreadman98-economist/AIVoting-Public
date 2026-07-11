@@ -1,0 +1,4 @@
+n,n_events,repair_type
+23,23,copied_top_level_borda_ranking
+1,1,inferred_best_pick_from_signed_allocation_cents
+21,21,inferred_borda_from_signed_allocation_cents

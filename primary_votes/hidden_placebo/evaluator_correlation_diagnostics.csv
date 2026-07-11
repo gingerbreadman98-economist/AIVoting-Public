@@ -1,0 +1,17 @@
+evaluator_a,evaluator_b,pearson_correlation
+Qwen/Qwen2.5-7B-Instruct::normal_01,Qwen/Qwen2.5-7B-Instruct::normal_01,1.0
+Qwen/Qwen2.5-7B-Instruct::normal_01,Qwen/Qwen2.5-7B-Instruct::normal_02,0.340545021596989
+Qwen/Qwen2.5-7B-Instruct::normal_01,Qwen/Qwen2.5-7B-Instruct::normal_03,0.4295121535065595
+Qwen/Qwen2.5-7B-Instruct::normal_01,Qwen/Qwen2.5-7B-Instruct::normal_04,0.39734155700861945
+Qwen/Qwen2.5-7B-Instruct::normal_02,Qwen/Qwen2.5-7B-Instruct::normal_01,0.340545021596989
+Qwen/Qwen2.5-7B-Instruct::normal_02,Qwen/Qwen2.5-7B-Instruct::normal_02,1.0
+Qwen/Qwen2.5-7B-Instruct::normal_02,Qwen/Qwen2.5-7B-Instruct::normal_03,0.4464389062299751
+Qwen/Qwen2.5-7B-Instruct::normal_02,Qwen/Qwen2.5-7B-Instruct::normal_04,0.3987249061896741
+Qwen/Qwen2.5-7B-Instruct::normal_03,Qwen/Qwen2.5-7B-Instruct::normal_01,0.4295121535065595
+Qwen/Qwen2.5-7B-Instruct::normal_03,Qwen/Qwen2.5-7B-Instruct::normal_02,0.4464389062299751
+Qwen/Qwen2.5-7B-Instruct::normal_03,Qwen/Qwen2.5-7B-Instruct::normal_03,1.0
+Qwen/Qwen2.5-7B-Instruct::normal_03,Qwen/Qwen2.5-7B-Instruct::normal_04,0.453348280869296
+Qwen/Qwen2.5-7B-Instruct::normal_04,Qwen/Qwen2.5-7B-Instruct::normal_01,0.39734155700861945
+Qwen/Qwen2.5-7B-Instruct::normal_04,Qwen/Qwen2.5-7B-Instruct::normal_02,0.3987249061896741
+Qwen/Qwen2.5-7B-Instruct::normal_04,Qwen/Qwen2.5-7B-Instruct::normal_03,0.453348280869296
+Qwen/Qwen2.5-7B-Instruct::normal_04,Qwen/Qwen2.5-7B-Instruct::normal_04,1.0

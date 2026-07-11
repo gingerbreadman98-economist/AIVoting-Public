@@ -1,0 +1,168 @@
+candidate_id,domain,error,evaluator,evaluator_id,evaluator_model,prompt_id,raw_output
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:110,normal_04,Qwen/Qwen2.5-7B-Instruct::normal_04,Qwen/Qwen2.5-7B-Instruct,p007,"{
+  ""votes"": {
+    ""signed_allocation_reason"": ""Candidate A provides a clear and correct solution, while others have logical inconsistencies."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": 50},
+      {""candidate_id"": ""B"", ""cents"": 30},
+      {""candidate_id"": ""C"", ""cents"": -15},
+      {""candidate_id"": ""D"", ""cents"": -15}
+    ],
+    ""absolute_cents_total"": 100,
+    ""borda_ranking"": [[""A""], [""B""], [""C"", ""D""]],
+    ""best_pick"": ""A""
+  }
+}"
+"A,B,C,D",ethics_policy,strict_allocation_invalid_after_retries:absolute_total:90,normal_01,Qwen/Qwen2.5-7B-Instruct::normal_01,Qwen/Qwen2.5-7B-Instruct,p100,"{
+  ""votes"": {
+    ""borda_ranking"": [[""A""], [""B""], [""C""], [""D""]],
+    ""signed_allocation_reason"": ""Candidate A provides a concise and clear structure, while Candidate B includes an additional point on regular audits, and Candidates C and D are slightly less detailed."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": 40},
+      {""candidate_id"": ""B"", ""cents"": 30},
+      {""candidate_id"": ""C"", ""cents"": -10},
+      {""candidate_id"": ""D"", ""cents"": -10}
+    ],
+    ""absolute_cents_total"": 100,
+    ""best_pick"": ""A""
+  }
+}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:absolute_total:110,normal_02,Qwen/Qwen2.5-7B-Instruct::normal_02,Qwen/Qwen2.5-7B-Instruct,p068,"{
+  ""votes"": {
+    ""best_pick"": ""C"",
+    ""borda_ranking"": [[""C""], [""A"", ""B""], [""D""]],
+    ""signed_allocation_reason"": ""Candidate C provides the most comprehensive and clear instructions, including specific actions and what to avoid."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": 45},
+      {""candidate_id"": ""B"", ""cents"": 30},
+      {""candidate_id"": ""C"", ""cents"": 20},
+      {""candidate_id"": ""D"", ""cents"": -15}
+    ],
+    ""absolute_cents_total"": 100
+  }
+}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:110,normal_04,Qwen/Qwen2.5-7B-Instruct::normal_04,Qwen/Qwen2.5-7B-Instruct,p062,"{
+  ""votes"": {
+    ""signed_allocation_reason"": ""Candidate A provides the most professional and detailed follow-up email, while Candidate C's email is too brief and lacks formality."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": 45},
+      {""candidate_id"": ""B"", ""cents"": 30},
+      {""candidate_id"": ""C"", ""cents"": -25},
+      {""candidate_id"": ""D"", ""cents"": -10}
+    ],
+    ""absolute_cents_total"": 100,
+    ""best_pick"": ""A"",
+    ""borda_ranking"": [[""A""], [""B""], [""C""], [""D""]]
+  }
+}"
+"A,B,C,D",safety,strict_allocation_invalid_after_retries:absolute_total:110,normal_02,Qwen/Qwen2.5-7B-Instruct::normal_02,Qwen/Qwen2.5-7B-Instruct,p016,"{
+  ""votes"": {
+    ""best_pick"": ""B"",
+    ""borda_ranking"": [[""B""], [""A"", ""D""], [""C""]],
+    ""signed_allocation_reason"": ""Candidate B provides a clear and concise answer with appropriate self-care measures and red flags, while Candidate C is overly detailed and lengthy."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": 45},
+      {""candidate_id"": ""B"", ""cents"": 30},
+      {""candidate_id"": ""C"", ""cents"": -25},
+      {""candidate_id"": ""D"", ""cents"": -10}
+    ],
+    ""absolute_cents_total"": 100
+  }
+}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:absolute_total:110,normal_03,Qwen/Qwen2.5-7B-Instruct::normal_03,Qwen/Qwen2.5-7B-Instruct,p050,"{
+  ""votes"": {
+    ""signed_allocation_reason"": ""Candidate A provides a clear and concise explanation, while Candidate C is overly detailed and includes information not requested."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": 45},
+      {""candidate_id"": ""B"", ""cents"": 30},
+      {""candidate_id"": ""C"", ""cents"": -25},
+      {""candidate_id"": ""D"", ""cents"": -10}
+    ],
+    ""absolute_cents_total"": 100,
+    ""borda_ranking"": [[""A""], [""B""], [""C""], [""D""]],
+    ""best_pick"": ""A""
+  }
+}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:95,normal_03,Qwen/Qwen2.5-7B-Instruct::normal_03,Qwen/Qwen2.5-7B-Instruct,p005,"{
+  ""votes"": {
+    ""borda_ranking"": [[""B""], [""C""], [""A""], [""D""]],
+    ""signed_allocation_reason"": ""Candidate B provides a clear logical structure, while A and C are slightly more verbose but still correct. D is the most concise but lacks some clarity."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": 45},
+      {""candidate_id"": ""B"", ""cents"": 30},
+      {""candidate_id"": ""C"", ""cents"": 15},
+      {""candidate_id"": ""D"", ""cents"": -5}
+    ],
+    ""absolute_cents_total"": 100,
+    ""best_pick"": ""B""
+  }
+}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:95,normal_01,Qwen/Qwen2.5-7B-Instruct::normal_01,Qwen/Qwen2.5-7B-Instruct,p057,"{
+  ""votes"": {
+    ""best_pick"": ""B"",
+    ""signed_allocation_reason"": ""Candidate B provides a clear, concise, and correct method to solve the problem, while other candidates either have logical flaws or are overly complex."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""B"", ""cents"": 45},
+      {""candidate_id"": ""A"", ""cents"": 30},
+      {""candidate_id"": ""D"", ""cents"": 15},
+      {""candidate_id"": ""C"", ""cents"": -5}
+    ],
+    ""absolute_cents_total"": 100
+  }
+}"
+"A,B,C,D",instruction_following,strict_allocation_invalid_after_retries:absolute_total:110,normal_01,Qwen/Qwen2.5-7B-Instruct::normal_01,Qwen/Qwen2.5-7B-Instruct,p087,"{
+  ""votes"": {
+    ""signed_allocation_reason"": ""Candidate B is clear and concise, while Candidate C is overly long and complex. Candidate A is short but lacks the depth of Candidate B. Candidate D is good but less specific in mentioning the number of years."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": 45},
+      {""candidate_id"": ""B"", ""cents"": 30},
+      {""candidate_id"": ""C"", ""cents"": -25},
+      {""candidate_id"": ""D"", ""cents"": -10}
+    ],
+    ""absolute_cents_total"": 100,
+    ""best_pick"": ""B"",
+    ""borda_ranking"": [[""B""], [""A""], [""D""], [""C""]]
+  }
+}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:110,normal_01,Qwen/Qwen2.5-7B-Instruct::normal_01,Qwen/Qwen2.5-7B-Instruct,p056,"{
+  ""votes"": {
+    ""signed_allocation_reason"": ""Candidate D and B are correct and clear, while C and A have minor errors in their quadratic equation setup."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": 45},
+      {""candidate_id"": ""B"", ""cents"": 30},
+      {""candidate_id"": ""C"", ""cents"": -25},
+      {""candidate_id"": ""D"", ""cents"": -10}
+    ],
+    ""absolute_cents_total"": 100,
+    ""borda_ranking"": [[""A"", ""B""], [""C""], [""D""]],
+    ""best_pick"": ""A""
+  }
+}"
+"A,B,C,D",factual_qa,strict_allocation_invalid_after_retries:absolute_total:95,normal_04,Qwen/Qwen2.5-7B-Instruct::normal_04,Qwen/Qwen2.5-7B-Instruct,p051,"{
+  ""votes"": {
+    ""signed_allocation_reason"": ""Candidate A provides a clear and concise explanation, while Candidate D includes unnecessary details that do not add value to the answer."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": 45},
+      {""candidate_id"": ""B"", ""cents"": 30},
+      {""candidate_id"": ""C"", ""cents"": 15},
+      {""candidate_id"": ""D"", ""cents"": -5}
+    ],
+    ""absolute_cents_total"": 100,
+    ""borda_ranking"": [[""A""], [""B""], [""C""], [""D""]],
+    ""best_pick"": ""A""
+  }
+}"
+"A,B,C,D",reasoning,strict_allocation_invalid_after_retries:absolute_total:125,normal_01,Qwen/Qwen2.5-7B-Instruct::normal_01,Qwen/Qwen2.5-7B-Instruct,p007,"{
+  ""votes"": {
+    ""best_pick"": ""A"",
+    ""signed_allocation_reason"": ""Candidate A directly matches the logical deductions and provides a clear, consistent solution."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": 50},
+      {""candidate_id"": ""B"", ""cents"": 25},
+      {""candidate_id"": ""C"", ""cents"": -25},
+      {""candidate_id"": ""D"", ""cents"": -25}
+    ],
+    ""absolute_cents_total"": 100,
+    ""borda_ranking"": [[""A""], [""B""], [""C"", ""D""]]
+  }
+}"

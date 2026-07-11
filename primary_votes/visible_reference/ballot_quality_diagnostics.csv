@@ -1,0 +1,2 @@
+attempted_ballots,clean_ballots,clean_rate_attempted,evaluator_model,failed_ballots,failure_rate_attempted,parsed_ballots,parsed_candidate_rows,repaired_ballots,repaired_rate_attempted
+383,325,0.8485639686684073,Qwen/Qwen2.5-7B-Instruct,4,0.010443864229765013,379,1516,54,0.1409921671018277

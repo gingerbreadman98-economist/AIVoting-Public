@@ -1,0 +1,57 @@
+candidate_id,domain,error,evaluator,evaluator_id,evaluator_model,prompt_id,raw_output
+"A,B,C,D",business_advice,strict_allocation_invalid_after_retries:absolute_total:95,normal_02,Qwen/Qwen2.5-7B-Instruct::normal_02,Qwen/Qwen2.5-7B-Instruct,p036,"{
+  ""votes"": {
+    ""signed_allocation_reason"": ""Candidate C closely follows the structure and depth of the private reference answer, while Candidates A, B, and D lack some of the detailed hypotheses, experiments, and metrics."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""C"", ""cents"": 40},
+      {""candidate_id"": ""A"", ""cents"": 30},
+      {""candidate_id"": ""B"", ""cents"": 20},
+      {""candidate_id"": ""D"", ""cents"": -5}
+    ],
+    ""absolute_cents_total"": 100,
+    ""borda_ranking"": [[""C""], [""A""], [""B""], [""D""]],
+    ""best_pick"": ""C""
+  }
+}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:130,normal_02,Qwen/Qwen2.5-7B-Instruct::normal_02,Qwen/Qwen2.5-7B-Instruct,p060,"{
+  ""votes"": {
+    ""best_pick"": ""D"",
+    ""borda_ranking"": [[""D""], [""C""], [""B""], [""A""]],
+    ""signed_allocation_reason"": ""Candidate D closely matches the private reference answer, while A is slightly less detailed and C is more verbose."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": -15},
+      {""candidate_id"": ""B"", ""cents"": -25},
+      {""candidate_id"": ""C"", ""cents"": -30},
+      {""candidate_id"": ""D"", ""cents"": 60}
+    ],
+    ""absolute_cents_total"": 100
+  }
+}"
+"A,B,C,D",analysis,strict_allocation_invalid_after_retries:absolute_total:85,normal_03,Qwen/Qwen2.5-7B-Instruct::normal_03,Qwen/Qwen2.5-7B-Instruct,p042,"{
+  ""votes"": {
+    ""signed_allocation_reason"": ""Candidate A closely matches the private reference answer by identifying the confounding variable and suggesting a controlled study. Candidates B and D are close but less precise, while Candidate C is slightly off in terminology and detail."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": 45},
+      {""candidate_id"": ""B"", ""cents"": 30},
+      {""candidate_id"": ""C"", ""cents"": -5},
+      {""candidate_id"": ""D"", ""cents"": -5}
+    ],
+    ""absolute_cents_total"": 100,
+    ""best_pick"": ""A"",
+    ""borda_ranking"": [[""A""], [""B"", ""C"", ""D""]]
+  }
+}"
+"A,B,C,D",writing,strict_allocation_invalid_after_retries:absolute_total:130,normal_02,Qwen/Qwen2.5-7B-Instruct::normal_02,Qwen/Qwen2.5-7B-Instruct,p011,"{
+  ""votes"": {
+    ""borda_ranking"": [[""D""], [""C""], [""B""], [""A""]],
+    ""best_pick"": ""D"",
+    ""signed_allocation_reason"": ""Candidate D closely matches the structure and content of the private reference answer, while Candidate C and B are less detailed and clear."",
+    ""signed_allocation_cents"": [
+      {""candidate_id"": ""A"", ""cents"": -15},
+      {""candidate_id"": ""B"", ""cents"": -25},
+      {""candidate_id"": ""C"", ""cents"": -30},
+      {""candidate_id"": ""D"", ""cents"": 60}
+    ],
+    ""absolute_cents_total"": 100
+  }
+}"
