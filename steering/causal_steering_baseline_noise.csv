@@ -1,0 +1,2 @@
+allocation_sign_flip_rate,allocation_top_flip_rate,best_pick_flip_rate,mean_abs_delta_allocation,mean_abs_delta_borda,n_candidate_pairs,n_replicate_ballots,p90_abs_delta_allocation
+0.05263157894736842,0.06315789473684211,0.07368421052631578,0.041160758832859204,0.14736842105263157,380,95,0.1067211838006231

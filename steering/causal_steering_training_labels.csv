@@ -1,0 +1,2 @@
+help_rate,hurt_rate,n_ballots,n_candidate_rows,n_help,n_hurt,n_neutral,n_prompts,training_repair_policy
+0.6027874564459931,0.3588850174216028,287,1148,692,412,44,75,all

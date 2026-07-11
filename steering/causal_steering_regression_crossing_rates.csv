@@ -1,0 +1,11 @@
+intervention,n,intended_crossing_rate
+help_to_bottom,50,0.08
+help_to_top,50,0.0
+hurt_to_bottom,50,0.04
+hurt_to_top,50,0.1
+neg_help_to_bottom,50,0.06
+neg_help_to_top,50,0.08
+neg_hurt_to_bottom,50,0.1
+neg_hurt_to_top,50,0.0
+random_bottom_3seed_mean,50,0.04
+random_top_3seed_mean,50,0.04666666666666667
